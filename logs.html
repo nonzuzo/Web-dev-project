@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Logs Page</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styles/logs.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
+</head>
+<body class="my-logs-page">
+    <div class="main">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <span class="icon">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </span>
+                    <a href="#">Housing Issue Portal</a>
+                </div>
+                <div class="navlist">
+                    <ul class="ml-auto">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Report Logs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons-outlined">logout</span> Sign Out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Report Logs -->
+        <div class="details">
+            <div class="reportsLog">
+                <div class="cardHeader">
+                    <h2>Reports Log</h2>
+                </div>
+        
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Room No</th>
+                            <th>Hostel Name</th>
+                            <th>Issue Type</th>
+                            <th>Date Reported</th>
+                            <th>Date Completed</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A2</td>
+                            <td>Wangari Mathai</td>
+                            <td>Personal</td>
+                            <td>2024-01-13</td>
+                            <td>2024-01-15</td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td>
+                                <button class="mark-completed-btn" onclick="markCompleted(this)">Mark Completed</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A3</td>
+                            <td>Wangari Mathai</td>
+                            <td>Maintenance</td>
+                            <td>2024-01-14</td>
+                            <td></td>
+                            <td><span class="status in-progress">In Progress</span></td>
+                            <td>
+                                <button class="mark-completed-btn" onclick="markCompleted(this)">Mark Completed</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A12</td>
+                            <td>Wangari Mathai</td>
+                            <td>Supplies</td>
+                            <td>2024-01-14</td>
+                            <td></td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td>
+                                <button class="mark-completed-btn" onclick="markCompleted(this)">Mark Completed</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/logs.js"></script>
+    
+</body>
+</html>

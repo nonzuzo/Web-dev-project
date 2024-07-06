@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		beautiful and simple website using html only -- fullywrold web tutorials
+	</title>
+    <style>
+        body{
+        background-repeat:no-repeat;
+        background-size:cover;
+        }
+		div{
+			background-color: rgb(255, 255, 255, 0.85);
+			width:80%;
+		}
+		.pill{
+			font-size:30px;
+			padding:0.5em 1em;
+			margin:0.25em;
+			border-radius:1em;
+			border:0.1em;
+			outline:none;
+			background: #aa3131;
+			
+		}
+		.pill:hover{
+			background: #7d2323;
+		}
+		button{
+			color:white;
+		}
+    </style>
+	<link rel="stylesheet" href="assets/styles/navbar.css">
+</head>
+<body background="../Housing Issue Web Page/assets/images/ashesiPic.jpg" link="#000" alink="#017bf5" vlink="#000">
+	<nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <span class="icon">
+                    <img src="assets/images/logo.png" alt="logo">
+                </span>
+                <a href="#">Housing Issue Portal</a>
+            </div>
+            <div class="navlist">
+                <ul class="ml-auto">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="logs.html">Report Logs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li>
+                        <a href="login.html">
+                            <span class="material-icons-outlined">logout</span> Sign Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<center>
+	<div>
+	<h1 align="center">
+		<font face="Lato" color="#017bf5" size="7">
+			Welcome
+		</font>
+	</h1>
+	<h3 align="center">
+		<font face="Lato" color="#000" size="5">
+			How can we help you today?
+		</font>
+	</h3>
+	<br />
+	<h3 align="center">
+		<button class="pill" onclick="location.href='issue.html'"><font face="Lato">Report an Issue</font></button>
+	</h3>
+	</div>
+	</center>
+</body>
+</html>

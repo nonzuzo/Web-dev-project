@@ -1,0 +1,138 @@
+/* Global Styles*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url('../images/background.jpg');
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    font-size: 14px;
+    margin: 0;
+}
+
+body.my-issue-page {
+    background: url('../images/background.jpg') center center fixed;
+    background-size: cover;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Issue Form */
+.my-issue-page .card-wrapper {
+    max-width: 550px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.my-issue-page .card {
+    border-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-issue-page .card.fat {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px;
+}
+
+.my-issue-page .card .card-title {
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 25pt;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    background-color: red;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.my-issue-page .form-control {
+    border-width: 2.3px;
+}
+
+.my-issue-page .form-group label {
+    width: 100%;
+    display: block;
+}
+
+.my-issue-page .form-group select {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);
+    transition: 0.2s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.my-issue-page .form-group input {
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    padding: 5px;
+}
+
+.my-issue-page .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);
+    transition: 0.2s ease-in-out;
+    resize: none;
+}
+
+.my-issue-page .btn.btn-block {
+    padding: 12px 10px;
+    background-color: red;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+
+}
+
+.my-issue-page .error {
+    color: red;
+}
+
+.my-issue-page .error-border {
+    border: 1px solid red;
+}
+
+.my-issue-page #success {
+    color: #28A745;
+}
+
+@media screen and (max-width: 425px) {
+    .my-issue-page .card-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .my-issue-page .card.fat {
+        padding: 0;
+    }
+
+    .my-issue-page .card.fat .card-body {
+        padding: 15px;
+    }
+}
